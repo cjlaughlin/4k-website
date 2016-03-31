@@ -2,9 +2,24 @@
   "name": "hellonode",
   "version": "0.0.1",
   "dependencies": {
-    "express": "4.12.3"
+    "express": "^4.12.3"
   },
   "engines": {
     "node": "0.12.2"
-  }
+  },
+  "description": "4th & King, LLC",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjlaughlin/hello-node_js-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjlaughlin/hello-node_js-express/issues"
+  },
+  "homepage": "https://github.com/cjlaughlin/hello-node_js-express#readme"
 }
