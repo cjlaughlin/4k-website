@@ -1,9 +1,10 @@
 var express = require('express');
 var app = express();
+var path    = require("path");
 
 app.get('/', function (req, res) {
-  res.send('hello, chris! this is cool!');
-  res.render('index.html');
+  res.sendFile(path.join(__dirname+'/index.html'));
+  //__dirname : It will resolve to your project folder.
 });
 
 app.listen(process.env.PORT || 3000);
