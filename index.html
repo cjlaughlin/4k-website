@@ -1,33 +1,33 @@
 <!DOCTYPE html>
+<html>
 <head>
+<meta charset="utf-8"/>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-56998320-1', 'auto');
-  ga('send', 'pageview');
-
-
-
-</script>
-
-<link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
-
+<title>
+  4th & King
+</title>
 
 <style type="text/css">
 
-html {
-  background-color: black;
-  background: url(https://s3-us-west-1.amazonaws.com/4k-website/images/tracks-01.jpg) no-repeat center center fixed;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html{
+  width: 100%;
+  height:100%;
+  position: fixed;
+  background: url('https://s3-us-west-1.amazonaws.com/4k-website/images/tracks-01.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  transition: 3s;
-  background-blend-mode: darken;
+}
+
+body {
+  min-height:100%;
 }
 
 .mailto{
@@ -57,6 +57,7 @@ html {
   padding: 10px,;
   padding-top: 2px;
   border: solid 3px white;
+  font-size: 12pt;
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   color: white;
@@ -71,38 +72,91 @@ html {
   color: black;
 }
 
-/* ----------- iPhone 6 ----------- */
 
-/* Portrait and Landscape */
-@media only screen and (max-width: 667px) {
+/* ----------- Desktop ----------- */
+
+@media only screen and (max-width : 800px){
+
+    #logo {
+      width: 400px;
+      height: 147px;
+    }
+
+  }
+
+
+/* Portrait*/
+@media only screen
+and (orientation : portrait) {
+
+    #contactwrapper {
+      bottom: 200px; left: 0; right: 0;
+      width: 600px;
+      height: 100px;
+      padding-right: 0px;
+    }
+
+    #contact {
+      font-size: 30pt;
+      padding: 30px;
+    }
+
+}
+
+/* Landscape*/
+@media only screen
+and (device-width: 320px) 
+and (orientation : landscape) {
 
     #logo {
       width: 300px;
+      height: 110px;
     }
 
     #contactwrapper {
-      width: 500px;
-      height: 40px;
+      bottom: 0px; left: 0; right: 0;
+      width: 100%;
+      height: 100px;
+      padding-right: 0px;
     }
 
-}
-
-
-@media only screen and (max-width: 600px) {
-
-    #logo {
-      width: 250px;
+    #contact {
+      font-size: 25pt;
+      padding: 30px;
+      background-color: white;
+      border: none;
+      color: black;
     }
 
-    #contactwrapper {
-      padding-right: 5px;
-    }
 }
 
 </style>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56998320-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body>
+
+
+<img src="https://s3-us-west-1.amazonaws.com/4k-website/images/4K_logo_white.svg" onclick="mail4k();" onerror="this.onerror=null; this.src='https://s3-us-west-1.amazonaws.com/4k-website/images/4K_logo_white.png'" id="logo">
+
+<div id="contactwrapper" onclick="mail4k();" onerror="this.onerror=null;">
+  <div id="contact">
+      Get in touch
+  </div>
+</div>
+<a class="mailto" href="mailto:hello@4thandking.com"></a>
 
 <script type="text/javascript">
 
@@ -115,17 +169,6 @@ function mail4k() {
 
 </script>
 
-<img src="https://s3-us-west-1.amazonaws.com/4k-website/images/4K_logo_white.svg" onclick="mail4k();"" onerror="this.onerror=null; this.src='https://s3-us-west-1.amazonaws.com/4k-website/images/4K_logo_white.png'" id="logo">
 
-<div id="contactwrapper" onclick="mail4k();" onerror="this.onerror=null;">
-  <div id="contact">
-      Get in touch
-  </div>
-</div>
-<a class="mailto" href="mailto:hello@4thandking.com"></a>
-
-  </body
-
-
-
+</body>
 </html>
