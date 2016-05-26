@@ -16,6 +16,7 @@
 
 <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
 
+
 <style type="text/css">
 
 html {
@@ -36,18 +37,23 @@ html {
 }
 
 #logo {
-  margin: 0 auto;
+  margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
   width: 600px;
+  height: 220px;
 }
 
-#contact {
-  margin: 0 auto;
+#contactwrapper {
+  margin: auto;
   position: absolute;
   bottom: 100px; left: 0; right: 0;
   width: 220px;
   height: 40px;
+  padding-right: 20px;
+}
+
+#contact {
   padding: 10,10,10,10;
   border: solid 3px white;
   font-family: 'Raleway', sans-serif;
@@ -123,8 +129,11 @@ function mail4k() {
 </script>
 
 <img src="https://s3-us-west-1.amazonaws.com/4k-website/images/4K_logo_white.svg" onclick="mail4k();"" onerror="this.onerror=null; this.src='https://s3-us-west-1.amazonaws.com/4k-website/images/4K_logo_white.png'" id="logo">
-<div id="contact" onclick="mail4k();"" onerror="this.onerror=null;">
-    Get in touch
+
+<div id="contactwrapper" onclick="mail4k();" onerror="this.onerror=null;">
+  <div id="contact">
+      Get in touch
+  </div>
 </div>
 <a class="mailto" href="mailto:hello@4thandking.com"></a>
 
